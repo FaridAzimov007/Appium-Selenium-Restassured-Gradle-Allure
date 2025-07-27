@@ -77,6 +77,15 @@ tasks.register("regression", Test) {
     }
 }
 
+tasks.register("restAPI", Test) {
+    useJUnitPlatform {
+        includeTags("RestApi")
+    }
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)

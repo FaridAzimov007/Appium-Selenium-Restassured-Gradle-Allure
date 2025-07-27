@@ -16,6 +16,7 @@ import static rest.endpoints.RequestResources.SINGLE_USER_PATH;
 import static rest.steps.users.UserUpdate.fileToObject;
 import static rest.steps.users.UserUpdate.mappingToClass;
 
+@DisplayName("Update user info")
 public class UdateUserData {
     @Owner("Farid Azimov - SDET")
     @Feature(value = "Update user info")

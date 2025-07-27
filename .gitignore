@@ -40,3 +40,29 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# === IDE-specific ===
+.idea/
+.settings/
+
+# === Build artifacts ===
+/target/
+/build/
+/out/
+/test-output/*
+
+# === Logs and temp files ===
+*.log
+*.tmp
+
+# === Allure reports ===
+allure-report/
+allure-results/
+
+# === Environment & secrets ===
+.env
+*.secret
+*.local.properties
+
+# === Custom test utility packages ===
+src/test/java/**/result_index/
